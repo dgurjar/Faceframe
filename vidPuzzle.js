@@ -216,8 +216,8 @@ function trackHead(){
 
     document.addEventListener("facetrackingEvent", function( event ) {
         /* Redraw the pieces containted within the head */
-        var width = event.width*1.3;
-        var height = event.height*1.3;
+        var width = event.width;
+        var height = event.height;
         var x = event.x - width/2;
         var y = event.y - height/2;
 
@@ -250,7 +250,7 @@ function getPiecesWithin(x, y, width, height){
         var p_x = p.src_col*pieceWidth;
         var p_y = p.src_row*pieceHeight;
         var pieceRect = {"left": p_x,
-                "right": p_y+pieceWidth,
+                "right": p_x+pieceWidth,
                 "top": p_y,
                 "bottom": p_y+pieceHeight};
         if(intersectRect(faceRect, pieceRect)){
