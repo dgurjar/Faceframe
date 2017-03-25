@@ -1,5 +1,7 @@
-faceframe
+Faceframe
 =========
 
-A puzzle game which where the pieces/frames contain video from the user's webcam.
-Frames that containt he user's face will be visible, while frames that do not will be obscured.
+A puzzle game which where the pieces/frames contain video content.
+
+Currently this uses the webcam as a source for video, but the goal is to allow
+the user to get this data from anywhere on the internet
